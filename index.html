@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foto & Naam</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app" aria-live="polite">
+      <section id="startScreen" class="start-screen">
+        <div class="start-panel">
+          <p class="eyebrow">Presentatie</p>
+          <h1>Foto & Naam</h1>
+          <form id="presenterForm" class="presenter-form">
+            <label for="presenterName">Naam presentator</label>
+            <div class="presenter-row">
+              <input id="presenterName" name="presenterName" autocomplete="name" placeholder="Bijv. Sam" required>
+              <button type="submit">Start</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="quizScreen" class="quiz-screen" hidden>
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Presentator</p>
+            <p id="presenterLabel" class="presenter-label"></p>
+          </div>
+          <button id="restartButton" class="ghost-button" type="button">Andere presentator</button>
+        </header>
+
+        <button id="stage" class="stage" type="button" aria-label="Klik om verder te gaan">
+          <img id="personPhoto" alt="">
+          <div id="namePlate" class="name-plate"></div>
+        </button>
+
+        <footer class="controls">
+          <p id="progressLabel" class="progress-label"></p>
+          <button id="nextButton" class="next-button" type="button" hidden>Volgende foto</button>
+        </footer>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
