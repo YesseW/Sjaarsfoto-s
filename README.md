@@ -1,6 +1,6 @@
 # Foto & Naam
 
-Een simpele website voor een foto-en-naam presentatie, met een beheerderspagina in NSE-stijl.
+Een simpele website voor een foto-en-naam presentatie, met een beheerderspagina in een moderne NSE-stijl. De hoofdkleur is #77001a.
 
 Pagina's:
 
