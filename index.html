@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="app" aria-live="polite">
-      <section id="startScreen" class="start-screen">
+    <main class="phone-shell app" aria-live="polite">
+      <header class="brand-bar">
+        <a class="brand-word" href="beheer.html">Beheer</a>
+        <img class="brand-logo" src="assets/logo-nse.png" alt="NSE logo">
+      </header>
+
+      <section id="startScreen" class="start-screen screen-panel">
         <div class="start-panel">
           <p class="eyebrow">Presentatie</p>
           <h1>Foto & Naam</h1>
@@ -22,16 +27,25 @@
         </div>
       </section>
 
-      <section id="quizScreen" class="quiz-screen" hidden>
-        <header class="topbar">
+      <section id="emptyScreen" class="empty-screen screen-panel" hidden>
+        <div class="start-panel">
+          <p class="eyebrow">Nog niets toegevoegd</p>
+          <h1>Geen foto's</h1>
+          <p class="helper-text">Voeg eerst namen en foto's toe in beheer.</p>
+          <a class="primary-link" href="beheer.html">Naar beheer</a>
+        </div>
+      </section>
+
+      <section id="quizScreen" class="quiz-screen screen-panel" hidden>
+        <div class="presenter-meta">
           <div>
             <p class="eyebrow">Presentator</p>
             <p id="presenterLabel" class="presenter-label"></p>
           </div>
-          <button id="restartButton" class="ghost-button" type="button">Andere presentator</button>
-        </header>
+          <button id="restartButton" class="ghost-button" type="button">Wissel</button>
+        </div>
 
-        <button id="stage" class="stage" type="button" aria-label="Klik om verder te gaan">
+        <button id="stage" class="stage" type="button" aria-label="Tik om verder te gaan">
           <img id="personPhoto" alt="">
           <div id="namePlate" class="name-plate"></div>
         </button>
@@ -42,7 +56,6 @@
         </footer>
       </section>
     </main>
-
     <script src="app.js"></script>
   </body>
 </html>

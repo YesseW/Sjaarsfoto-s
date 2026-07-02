@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beheer | Foto & Naam</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="phone-shell admin-app">
+      <header class="brand-bar">
+        <a class="brand-word" href="index.html">Presentator</a>
+        <img class="brand-logo" src="assets/logo-nse.png" alt="NSE logo">
+      </header>
+
+      <section class="admin-content screen-panel">
+        <div class="admin-title">
+          <p class="eyebrow">Beheer</p>
+          <h1>Personen</h1>
+        </div>
+
+        <section class="admin-layout">
+          <form id="personForm" class="admin-form">
+            <h2>Toevoegen</h2>
+            <label for="personName">Naam</label>
+            <input id="personName" autocomplete="off" placeholder="Bijv. Amina" required>
+            <label for="photoUrl">Foto URL</label>
+            <input id="photoUrl" inputmode="url" placeholder="https://...">
+            <label for="photoFile">Of kies foto vanaf dit apparaat</label>
+            <input id="photoFile" type="file" accept="image/*">
+            <button type="submit">Persoon toevoegen</button>
+            <p class="helper-text">Foto's vanaf je apparaat worden in deze browser opgeslagen. Gebruik export/import om ze naar een telefoon te verplaatsen.</p>
+          </form>
+
+          <section class="admin-list-section">
+            <div class="admin-list-header">
+              <h2>Lijst</h2>
+              <span id="countLabel" class="count-label">0 personen</span>
+            </div>
+            <div id="personList" class="person-list"></div>
+          </section>
+        </section>
+
+        <section class="transfer-panel">
+          <h2>Overzetten</h2>
+          <div class="transfer-actions">
+            <button id="exportButton" type="button">Exporteren</button>
+            <label class="file-button" for="importFile">Importeren</label>
+            <input id="importFile" type="file" accept="application/json,.json" hidden>
+            <button id="resetButton" class="danger-button" type="button">Alles verwijderen</button>
+          </div>
+          <p id="statusMessage" class="status-message" role="status"></p>
+        </section>
+      </section>
+    </main>
+    <script src="beheer.js"></script>
+  </body>
+</html>
