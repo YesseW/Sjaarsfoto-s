@@ -10,11 +10,11 @@ Pagina's:
 
 Werking presentator:
 
-1. Vul de naam van de presentator in.
-2. Je ziet eerst een foto met naam.
+1. Open de presentator site.
+2. Je ziet direct een foto met naam.
 3. Tik op de foto: de naam verdwijnt.
 4. Tik opnieuw: de naam komt terug en de knop Volgende foto verschijnt.
-5. Elke presentator krijgt een eigen willekeurige volgorde.
+5. Met Schud start je een nieuwe willekeurige volgorde.
 
 Beheer:
 

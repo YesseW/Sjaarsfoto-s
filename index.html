@@ -14,20 +14,6 @@
         <div class="logo-card"><img class="brand-logo" src="assets/logo-nse.png" alt="NSE logo"></div>
       </header>
 
-      <section id="startScreen" class="start-screen screen-panel">
-        <div class="start-panel">
-          <p class="eyebrow">Presentatie</p>
-          <h1>Foto & Naam</h1>
-          <form id="presenterForm" class="presenter-form">
-            <label for="presenterName">Naam presentator</label>
-            <div class="presenter-row">
-              <input id="presenterName" name="presenterName" autocomplete="name" placeholder="Bijv. Sam" required>
-              <button type="submit">Start</button>
-            </div>
-          </form>
-        </div>
-      </section>
-
       <section id="emptyScreen" class="empty-screen screen-panel" hidden>
         <div class="start-panel">
           <p class="eyebrow">Nog niets toegevoegd</p>
@@ -40,10 +26,10 @@
       <section id="quizScreen" class="quiz-screen screen-panel" hidden>
         <div class="presenter-meta">
           <div>
-            <p class="eyebrow">Presentator</p>
-            <p id="presenterLabel" class="presenter-label"></p>
+            <p class="eyebrow">Presentatie</p>
+            <p id="presenterLabel" class="presenter-label">Tik op de foto</p>
           </div>
-          <button id="restartButton" class="ghost-button" type="button">Wissel</button>
+          <button id="restartButton" class="ghost-button" type="button">Schud</button>
         </div>
 
         <button id="stage" class="stage" type="button" aria-label="Tik om verder te gaan">
